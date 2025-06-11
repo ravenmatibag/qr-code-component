@@ -1,3 +1,75 @@
-body {
-  background-color:black; /* Change this color to any you like */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  --font-size: 15px;
+
+  --weight-light: 400;
+  --weight-bold: 700;
+
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: var(--white);
+    font-family: 'Outfit','Gill Sans';
+}
+
+
+.container{
+      min-height: 100vh;
+    background: var(--slate-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 3px 3px 20px #a5a5a51b, -3px -3px 10px #a5a5a510;
+}
+
+.qr-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title {
+  color: var(--slate-900);
+  font-weight: var(--weight-bold);
+  font-size: 20px;
+}
+
+.description {
+  font-weight: var(--weight-light);
+  color: var(--slate-500);
+}
+
+.card-content{
+    padding: 20px 10px;
+    font-size: var(--font-size);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; background: var(--slate-300);}
+.attribution a { color: hsl(228, 45%, 44%); }
